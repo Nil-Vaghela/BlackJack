@@ -74,9 +74,10 @@ def AskforCard(UserCard,DealersCard):
     while SumOfDealerNumber < 17:
         randomNumber = random.randint(0,12)
         if Cards[randomNumber] == "A":
-            UpdatedDealerCard.append[1]
+            UpdatedDealerCard.append(1)
         UpdatedDealerCard.append(Cards[randomNumber])
         ChangeA(UpdatedUserCard,UpdatedDealerCard)
+        SumOfDealerNumber = 0
         for i in UpdatedDealerCard:
             SumOfDealerNumber = SumOfDealerNumber + i
     for i in range(len(UpdatedUserCard)):
